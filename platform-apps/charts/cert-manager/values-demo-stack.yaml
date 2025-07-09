@@ -1,2 +1,6 @@
 
 createLetsEncryptProdClusterIssuer: true
+
+cert-manager:
+  webhook:
+    timeoutSeconds: 15 # best practice on gardener, and gardener will change this and produce an argocd out-of-sync
