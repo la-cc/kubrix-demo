@@ -34,7 +34,7 @@ external-dns:
         failureThreshold: 2
         httpGet:
           path: /healthz
-          port: "8888"
+          port: http-webhook
         initialDelaySeconds: 10
         periodSeconds: 10
         successThreshold: 1
@@ -43,7 +43,7 @@ external-dns:
         failureThreshold: 6
         httpGet:
           path: /healthz
-          port: "8888"
+          port: http-webhook
         initialDelaySeconds: 5
         periodSeconds: 10
         successThreshold: 1
