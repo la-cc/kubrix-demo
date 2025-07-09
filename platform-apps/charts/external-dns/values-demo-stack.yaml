@@ -10,6 +10,7 @@ external-dns:
     security:
       allowInsecureImages: true
   provider:
+    name: webhook
     webhook:
       image:
         repository: ghcr.io/stackitcloud/external-dns-stackit-webhook
