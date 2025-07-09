@@ -6,13 +6,17 @@ applications:
 
   - name: ingress-nginx
     annotations:
-      argocd.argoproj.io/sync-wave: "-11"- name: cert-manager
+      argocd.argoproj.io/sync-wave: "-11"
+      
+  - name: cert-manager
     annotations:
       argocd.argoproj.io/sync-wave: "-10"
 
   - name: external-dns
     annotations:
-      argocd.argoproj.io/sync-wave: "-9"- name: crossplane
+      argocd.argoproj.io/sync-wave: "-9"
+      
+  - name: crossplane
     annotations:
       argocd.argoproj.io/sync-wave: "-9"
 
