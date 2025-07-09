@@ -18,8 +18,6 @@ external-dns:
         repository: ghcr.io/stackitcloud/external-dns-stackit-webhook
         tag: v0.3.2       
       env:
-        - name: LOG_LEVEL
-          value: debug # reduce in production
         - name: AUTH_TOKEN
           valueFrom:
             secretKeyRef:
