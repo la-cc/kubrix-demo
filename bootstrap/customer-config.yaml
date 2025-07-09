@@ -1,3 +1,4 @@
-dnsProvider: ionos # supported: aws, ionos 
-domain: demo.kubrix.cloud
-# HA: true|false (only supported with kubriX prime)
+clusterType: 
+dnsProvider: stackit
+domain: kubrix.stackit.run
+gitRepo: https://github.com/la-cc/kubrix-demo
