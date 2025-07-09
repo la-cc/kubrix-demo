@@ -1,6 +1,7 @@
 eso:
   
-  providerUrl: "https://vault.kubrix.stackit.run/"backendName: vault-backend
+  providerUrl: "https://vault.kubrix.stackit.run/"
+  backendName: vault-backend
   secretStore: kubrix-kv
 
   # Copyright (c) HashiCorp, Inc.
