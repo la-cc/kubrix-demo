@@ -88,7 +88,7 @@ spec:
                 revision: main
               multiStageKargoAppSet:
                 github:
-                  organization: kubriX-demo
+                  organization: la-cc
 
     - id: publish
       name: Publish new Version of team configuration
