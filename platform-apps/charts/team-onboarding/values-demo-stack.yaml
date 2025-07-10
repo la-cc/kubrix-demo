@@ -10,7 +10,7 @@ teams:
 # new team stanza for team kubrix
   - name: kubrix
     sourceRepos:
-      - 'https://github.com/kubriX-stackit-demo/kubrix-**'
+      - 'https://github.com/kubriX-stackit-demo/kubrix-*'
     clusterResourceWhitelist:
       - group: ""
         kind: Namespace
