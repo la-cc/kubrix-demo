@@ -125,7 +125,7 @@ spec:
       action: publish:github
       input:
         sourcePath: ./team-apps-of-apps
-        repoUrl: github.com?repo=${{ steps['catalogFetch'].output.entity.metadata.name }}-apps&owner=la-cc
+        repoUrl: github.com?repo=${{ steps['catalogFetch'].output.entity.metadata.name }}-apps&owner=kubriX-stackit-demo
         title: team-apps repo for ${{ steps['catalogFetch'].output.entity.metadata.name }}
         description: team-apps repo for ${{ steps['catalogFetch'].output.entity.metadata.name }}
         token: ${{ secrets.USER_OAUTH_TOKEN }}
