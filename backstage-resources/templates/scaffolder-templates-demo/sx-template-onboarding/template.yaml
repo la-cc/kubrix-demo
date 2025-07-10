@@ -54,15 +54,15 @@ spec:
       name: Fetch the actual team configuration File from Github
       action: fetch:plain:file
       input:
-        url: https://github.com/la-cc/kubrix-demo/blob/main/platform-apps/charts/team-onboarding/values-demo-metalstack.yaml
-        targetPath: values-demo-metalstack.yaml
+        url: https://github.com/la-cc/kubrix-demo/blob/main/platform-apps/charts/team-onboarding/values-demo-stack.yaml
+        targetPath: values-demo-stack.yaml
 
     - id: replace-if-new
       name: Replace [] if new template
       action: roadiehq:utils:fs:replace
       input:
         files:
-          - file: values-demo-metalstack.yaml
+          - file: values-demo-stack.yaml
             find: 'teams: []'
             replaceWith: 'teams:'
 
@@ -70,7 +70,7 @@ spec:
       name: Update File with new Team Information
       action: roadiehq:utils:fs:append
       input:
-        path: values-demo-metalstack.yaml
+        path: values-demo-stack.yaml
         content: >
           
           # new team stanza for team ${{ steps['catalogFetch'].output.entity.metadata.name }}
