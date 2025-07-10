@@ -87,7 +87,7 @@ spec:
           #repoUrlRepo: ${{ (parameters.repoUrl | parseRepoUrl)["repo"] }}
           #repoUrlowner: ${{ (parameters.repoUrl | parseRepoUrl)["owner"] }}
           repoUrlRepo: ${{ steps['catalogFetch'].output.entity.metadata.name }}-${{ parameters.application_id }}
-          repoUrlowner: la-cc
+          repoUrlowner: kubriX-stackit-demo
     - id: publish-gitopsreposetup
       name: Publish Template Gitops Repo
       action: publish:github
